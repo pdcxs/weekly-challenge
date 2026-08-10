@@ -10,7 +10,7 @@ all uncommon words, order is not important.
 
 #### Example 1
 
-```perl
+```
 Input: $sentence1 = "apple banana apple"
        $sentence2 = "banana orange"
 Output: ("orange")
@@ -18,7 +18,7 @@ Output: ("orange")
 
 #### Example 2
 
-```perl
+```
 Input: $sentence1 = "cat dog"
        $sentence2 = "bird fish"
 Output: ("cat", "dog", "bird", "fish")
@@ -26,7 +26,7 @@ Output: ("cat", "dog", "bird", "fish")
 
 #### Example 3
 
-```perl
+```
 Input: $sentence1 = "the quick brown fox"
        $sentence2 = "the quick"
 Output: ("brown", "fox")
@@ -34,7 +34,7 @@ Output: ("brown", "fox")
 
 #### Example 4
 
-```perl
+```
 Input: $sentence1 = "hello"
        $sentence2 = "hello"
 Output: ()
@@ -42,7 +42,7 @@ Output: ()
 
 #### Example 5
 
-```perl
+```
 Input: $sentence1 = "blue blue red"
        $sentence2 = "red green green yellow"
 Output: ("yellow")
@@ -60,7 +60,7 @@ decomposition of the given string.
 
 #### Example 1
 
-```perl
+```
 Input: $str = "()()()"
 Output: ""
 
@@ -69,7 +69,7 @@ Primitive Decomposition: "()" + "()" + "()"
 
 #### Example 2
 
-```perl
+```
 Input: $str = "(((())))"
 Output: "((()))"
 
@@ -78,7 +78,7 @@ Primitive Decomposition: "(((())))"
 
 #### Example 3
 
-```perl
+```
 Input: $str = "(()())(())"
 Output: "()()()"
 
@@ -87,7 +87,7 @@ Primitive Decomposition: "(()())" + "(())"
 
 #### Example 4
 
-```perl
+```
 Input: $str = "()((()))()"
 Output: "(())"
 
@@ -96,7 +96,7 @@ Primitive Decomposition: "()" + "((()))" + "()"
 
 #### Example 5
 
-```perl
+```
 Input: $str = "(()(()))(()())"
 Output: "()(())()()"
 

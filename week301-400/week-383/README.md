@@ -12,7 +12,7 @@ The third list contains the similar words map.
 
 #### Example 1
 
-```perl
+```
 Input: $list1 = ("great", "acting")
        $list2 = ("fine", "drama")
        $list3 = (["great", "fine"], ["acting", "drama"])
@@ -21,7 +21,7 @@ Output: true
 
 #### Example 2
 
-```perl
+```
 Input: $list1 = ("apple", "pie")
        $list2 = ("banana", "pie")
        $list3 = (["apple", "peach"], ["peach", "banana"])
@@ -30,7 +30,7 @@ Output: false
 
 #### Example 3
 
-```perl
+```
 Input: $list1 = ("perl4", "python")
        $list2 = ("raku", "python")
        $list3 = (["perl4", "perl5", "raku"])
@@ -39,7 +39,7 @@ Output: true
 
 #### Example 4
 
-```perl
+```
 Input: $list1 = ("enjoy", "challenge")
        $list2 = ("love", "weekly", "challenge")
        $list3 = (["enjoy", "love"])
@@ -48,7 +48,7 @@ Output: false
 
 #### Example 5
 
-```perl
+```
 Input: $list1 = ("fast", "car")
        $list2 = ("quick", "vehicle")
        $list3 = (["quick", "fast"], ["vehicle", "car"])
@@ -68,56 +68,56 @@ web-safe value and return the nearest RGB color.
 
 #### Example 1
 
-```perl
+```
 Input: $color = "#F4B2D1"
 Output: "#FF99CC"
-
-Red: F4 (Decimal 244), closer to 255 => FF
-Green: B2 (Decimal 178), closer to 153 => 99
-Blue: D1 (Decimal 209), closer to 204 => CC
-So the nearest RGB: "#FF99CC"
 ```
+
+Red: `F4` (Decimal 244), closer to 255 => `FF`
+Green: `B2` (Decimal 178), closer to 153 => `99`
+Blue: `D1` (Decimal 209), closer to 204 => `CC`
+So the nearest RGB: `"#FF99CC"`
 
 #### Example 2
 
-```perl
+```
 Input: $color = "#15E6E5"
 Output: "#00FFCC"
-
-Red: 15 (Decimal 21), closer to 0 => 00
-Green: E6 (Decimal 230), closer to 255 => FF
-Blue: E5 (Decimal 229), closer to 204 => CC
 ```
+
+Red: `15` (Decimal 21), closer to 0 => `00`
+Green: `E6` (Decimal 230), closer to 255 => `FF`
+Blue: `E5` (Decimal 229), closer to 204 => `CC`
 
 #### Example 3
 
-```perl
+```
 Input: $color = "#191A65"
 Output: "#003366"
-
-Red: 19 (Decimal 25), closer to 0 => 00
-Green: 1A (Decimal 26), closer to 51 => 33
-Blue: 65 (Decimal 101), closer to 102 => 66
 ```
+
+Red: `19` (Decimal 25), closer to 0 => `00`
+Green: `1A` (Decimal 26), closer to 51 => `33`
+Blue: `65` (Decimal 101), closer to 102 => `66`
 
 #### Example 4
 
-```perl
+```
 Input: $color = "#2D5A1B"
 Output: "#336633"
-
-Red: 2D (Decimal 45), closer to 51 => 33
-Green: 5A (Decimal 90), closer to 102 => 66
-Blue: 1B (Decimal 27), closer to 51 => 33
 ```
+
+Red: `2D` (Decimal 45), closer to 51 => `33`
+Green: `5A` (Decimal 90), closer to 102 => `66`
+Blue: `1B` (Decimal 27), closer to 51 => `33`
 
 #### Example 5
 
-```perl
+```
 Input: $color = "#00FF66"
 Output: "#00FF66"
-
-Red: 00 (Decimal 0), closer to 0 => 00
-Green: FF (Decimal 255), closer to 255 => FF
-Blue: 66 (Decimal 102), closer to 102 => 66
 ```
+
+Red: `00` (Decimal 0), closer to 0 => `00`
+Green: `FF` (Decimal 255), closer to 255 => `FF`
+Blue: `66` (Decimal 102), closer to 102 => `66`

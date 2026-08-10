@@ -10,28 +10,28 @@ Write a script to convert the given number in the given base integer.
 
 #### Example 1
 
-```perl
+```
 Input: $num = 42, $base = 2
 Output: 101010
 ```
 
 #### Example 2
 
-```perl
+```
 Input: $num = 15642094, $base = 16
 Output: EEADEE
 ```
 
 #### Example 3
 
-```perl
+```
 Input: $num = 493, $base = 8
 Output: 755
 ```
 
 #### Example 4
 
-```perl
+```
 Input: $num = 2228519, $base = 36
 Output: 1BRJB
 ```
@@ -40,7 +40,7 @@ Base 36 uses numbers 0-9 and letters A-Z.
 
 #### Example 5
 
-```perl
+```
 Input: $num = 123456789, $base = 64
 Output: 7MyqL
 ```
@@ -57,35 +57,35 @@ Write a script to return all non-empty substrings (distinct) that have the same 
 
 #### Example 1
 
-```perl
+```
 Input: $binary = "0101"
 Output: ("01", "10")
 ```
 
 #### Example 2
 
-```perl
+```
 Input: $binary = "000111"
 Output: ("000111", "0011", "01")
 ```
 
 #### Example 3
 
-```perl
+```
 Input: $binary = "000011"
 Output:  ("0011", "01")
 ```
 
 #### Example 4
 
-```perl
+```
 Input: $binary = "10011100"
 Output: ("10", "0011", "01", "1100")
 ```
 
 #### Example 5
 
-```perl
+```
 Input: $binary = "00000"
 Output: ()
 ```
