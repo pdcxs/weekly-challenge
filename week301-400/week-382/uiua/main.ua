@@ -3,25 +3,39 @@ C ← =⊸⁅√ # check square number
 # We will go from one state to final state
 # each state is: {fixed_nums others}
 # we need rotate others and check whether is possible
-N ← (
-  ⊃(¤|◇⊣)°⊟    # decouple, unbox, extract last fixed num
-  ◡(⋅⋅(>0⧻°□)) # check whether unfixed-nums are empty
-  ⨬([]◌◌◌      # there's  no any unfixed nums any more, return []
-  | (          # there are still some unfixed nums, get the next neighbors
-     ⊙(
-        ⊙(⊸⊢◇(≡↻⊃(⇡◇⧻|¤))) # get rotates
-        ≡⊃(⊢|□↘1)▽C+       # check the first number add to last fixed number is square
-      )
-     ≡(⊂□◇⊂)
-    )
+N ← ⨬(
+  (
+    ⟜⊣⊙(⊸≡⊢≡↻⊃(⇡⧻|¤))°□₂
+    ⊙(▽≡C+)
+    ≡(□₂⊂)¤⊙≡⊃(⊢|↘1)
   )
-)
-G ← ×⊃(=0⧻°□⊣|C+◇⊃(⊢|⊣)⊢)
-
+| []
+)⊸(≍[]°□⊣)
+G  ← ×⊃(=0⧻°□⊣|C+◇⊃(⊢|⊣)⊢)
 F₁ ← ⨬([]|°□⊢⊣⊢)>0⊸⧻path(N|G)⊂□[1]□↘1+1⇡
-# F₁32
+F₁32
+# ⍜now(F₁34)
 
 # Use path is slow, maybe recur can be faster?
+# I tried following program
+# ```uiua
+# # Experimental!
+# N ← ⨬(
+#   (
+#     ⟜⊣⊙(⊸≡⊢≡↻⊃(⇡⧻|¤))°□₂
+#     ⊙(▽≡C+)
+#     ≡(□₂⊂)¤⊙≡⊃(⊢|↘1)
+#   )
+# | []
+# )⊸(≍[]°□⊣)
+# M ← ⨬(□[]|⊢▽)>0⊸/+⊸≡◇(¬≍[])
+# B ← (×C+⊃(⊢|⊣)⊙(≍[]))°□₂
+# S ← {[1] ↘1+1⇡ 34}
+# F ← °□recur(B|N|M)⊂∩□[1]↘1+1⇡
+# ⍜now(F 34)
+# ```uiua
+# Still very slow
+# It is hard to write simple prog to implement lazy search like haskell
 
 # Task 2
 F₂ ← ⍜▽(⨬(⋅[""]|⬚@0°⋕₂⇡˜ⁿ2)⊸>0⧻)⊸=@?
