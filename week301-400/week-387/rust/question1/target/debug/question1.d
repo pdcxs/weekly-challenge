@@ -1,0 +1,1 @@
+C:\Users\pdcxs\data\programming\weekly-challenge\week301-400\week-387\rust\question1\target\debug\question1.exe: C:\Users\pdcxs\data\programming\weekly-challenge\week301-400\week-387\rust\question1\src\main.rs

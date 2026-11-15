@@ -1,0 +1,4 @@
+Formula = {Term+}
+Term = {("(" ~ Formula ~ ")" | Atom) ~ Int?}
+Atom = {ASCII_ALPHA_UPPER ~ ASCII_ALPHA_LOWER?}
+Int = {ASCII_DIGIT+}
